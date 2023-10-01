@@ -1,2 +1,2 @@
 #!/bin/bash 
-chgrp -Gn -un -u r-x  hello
+chmod -ug+x,-o+r hello
