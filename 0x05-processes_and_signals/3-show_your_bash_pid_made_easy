@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+#Write a Bash script that displays the PID.
+sc_pid=$$
+while read -r pid pname; do
+	echo "$pid $pname"
+done < <(pgrep -f bash)
+echo "$sc_pid $0"
